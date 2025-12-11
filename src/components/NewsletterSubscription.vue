@@ -48,12 +48,7 @@
 
     <!-- Image Background Layout -->
     <div v-else-if="layout === 'image-background'" class="relative min-h-screen flex items-center justify-center">
-      <div
-        v-if="imageSrc"
-        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        :style="{ backgroundImage: `url(${imageSrc})` }"
-      ></div>
-      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="absolute inset-0 bg-black bg-opacity-50" :style="{ backgroundImage: `url(${imageSrc})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }"></div>
       <div class="relative z-10 max-w-md mx-auto p-8 rounded-lg shadow-xl" :style="{ backgroundColor: backgroundColor }">
         <NewsletterForm
           :headerText="headerText"
