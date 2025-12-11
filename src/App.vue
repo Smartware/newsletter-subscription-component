@@ -3,7 +3,7 @@ import NewsletterSubscription from './components/NewsletterSubscription.vue'
 
 const handleSubscription = (email) => {
   console.log('New subscription:', email)
-  // Here you would typically send the email to your backend
+  // it will send the email to the backend
 }
 </script>
 
