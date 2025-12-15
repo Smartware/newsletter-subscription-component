@@ -6,7 +6,7 @@
         <img v-if="imageSrc" :src="imageSrc" :alt="imageAlt" class="w-full h-auto rounded-lg shadow-lg" />
       </div>
       <div class="md:w-1/2" :style="{ backgroundColor: backgroundColor }">
-        <div class="p-8 rounded-lg">
+        <div class="p-6 rounded-lg">
           <NewsletterForm
             :headerText="headerText"
             :subText="subText"
@@ -164,7 +164,7 @@ export default {
     handleSubmit(email) {
       this.$emit('submit', email)
     }
-  }
+  },
 }
 </script>
 

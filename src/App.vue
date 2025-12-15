@@ -79,7 +79,7 @@ const handleSubscription = (email) => {
         <NewsletterSubscription
           headerText="Stay Updated!"
           subText="Get the latest news and updates delivered to your inbox."
-          buttonText="Subscribe Now"
+          buttonText="Subscribe"
           placeholderText="Enter your email address"
           primaryColor="#3B82F6"
           textColor="#1F2937"
